@@ -8,7 +8,7 @@ $db = 'phpJsCRUD';
 /* Create (if not exists) and connect DB */
 $conn = mysqli_connect($hostname,$user,$psswd);
 
-$query = 'CREATE DATABASE IF NOT EXISTS crud_db';
+$query = 'CREATE DATABASE IF NOT EXISTS $db';
 mysqli_query($conn,$query);
 $conn = mysqli_connect($hostname,$user,$psswd,$db);
 
