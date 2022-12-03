@@ -18,7 +18,8 @@ Made in vanilla *Javascript*, *PHP 8.1* and *JQuery*
    * *Internet Explorer (not tested yet)*
  * Custom Database
    * If you have another DB engine, modify the host in **php/conn.php**
-
+ * Custom Port
+   * If you have multiple Databases running at the same time, with your selected database, usually with the hostname : localhost, specify the port, for example : *localhost:8080*
 
 #### Funny curiosities in the timelapse of the CRUD
 * Windows issues
