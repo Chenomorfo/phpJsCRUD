@@ -1,6 +1,6 @@
 <?php 
 
-$hostname = '127.0.0.1:3310';
+$hostname = 'localhost';
 $user = 'root';
 $psswd = '';
 $db = 'phpJsCRUD';

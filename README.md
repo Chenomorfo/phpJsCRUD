@@ -16,6 +16,8 @@ Made in vanilla *Javascript*, *PHP 8.1* and *JQuery*
    * *Brave (not tested yet)*
    * *Microsoft Edge (not tested yet)*
    * *Internet Explorer (not tested yet)*
+ * Custom Database
+   * If you have another DB engine, modify the host in **php/conn.php**
 
 
 #### Funny curiosities in the timelapse of the CRUD
