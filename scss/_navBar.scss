@@ -1,0 +1,33 @@
+.navBar{
+    height: 80px;
+    background-color: rgba($color2, $alpha: .4);
+    ul{
+        height: 100%;
+        background-color: unset;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+        a{
+            user-select: none;
+            cursor: pointer;
+            text-decoration: none;
+            color: $color4;
+            
+            li{
+                font-size: 3.3rem;
+                background-color: rgba($color3, $alpha: 0.4);
+                padding: 3px 15px;
+                border-radius: 20px;
+                transition: background-color 0.3s ease-in-out;
+            }
+            li:hover{
+                background-color: rgba($color3, $alpha: 1);
+
+            }
+        }
+    }
+
+}

@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+$color1: #06283d;
+$color2: #256d85;
+$color3: #47b5ff;
+$color4: #dff6ff;
+
+@import 'navBar';
+@import 'form';
+@import 'search';

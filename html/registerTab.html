@@ -1,0 +1,71 @@
+
+
+
+    <h1>Registrar un elemento</h1>
+    <div class="RegContainer">
+      <form action="#" id="formData">
+        <!-- Videojuegos, pelis, etc -->
+        <div>
+          <label for="cbIndustria">Industria:</label> <br>
+          <select name="cbIndustria" id="cbIndustria">
+            <option selected hidden value="">Selecciona una industria</option>
+            <option value="Cinematografia">Cinematografia</option>
+            <option value="VideoJuegos">VideoJuegos</option>
+            <option value="Juegos de Rol">Juegos de Rol</option>
+            <option value="Obra Teatral">Obra Teatral</option>
+            <option value="Literatura">Literatura</option>
+          </select>
+        </div>
+
+        <!-- Nombre de la obra -->
+        <div>
+          <label for="txtTitle">Titulo:</label> <br>
+          <input placeholder="Titulo" id="txtTitle" name="txtTitle" type="text" />
+        </div>
+
+        <div>
+          <label for="txtImage">Portada:</label> <br>
+          <input placeholder="URL de la portada" id="txtImage" name="txtImage" type="text" />
+          <button type="button" id="loadPic">Cargar</button>
+        </div>
+
+        <div>
+          <label for="">Ambiente:</label> <br>
+          <select name="cbAmbientacion" id="cbAmbientacion">
+            <option selected hidden value="">Selecciona una ambientacion</option>
+            <option value="Victoriana">Victoriana</option>
+            <option value="Victoriano gotico">Victoriano gotico</option>
+            <option value="Old West">Old West</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+            <option value="Disney">Disney ( Original )</option>
+            <option value="Japones">Japones</option>
+            <option value="Retro">Retro</option>
+            <option value="Pixeles">Pixeles</option>
+          </select>
+        </div>
+
+
+        <!-- Año de lanzamiento -->
+        <div>
+          <label for="txtRelease">Año de lanzamiento</label> <br>
+          <input placeholder="Año" id="txtRelease" name="txtRelease" type="text" />
+        </div>
+
+        <!-- Compañia -->
+        <div>
+          <label for="txtCompany">Creado por:</label> <br>
+          <input placeholder="URL del logo del estudio" id="txtCompany" name="txtCompany" type="url" />
+        </div>
+
+        <!-- Director -->
+        <div>
+          <label for="txtDirector">Director:</label> <br>
+          <input placeholder="Director" id="txtDirector" name="txtDirector" type="text" />
+        </div>
+      </form>
+      <img id="picShow"
+        src="https://media-exp1.licdn.com/dms/image/C560BAQH13TDLlaBLbA/company-logo_200_200/0/1584544180342?e=2147483647&v=beta&t=WAU3JlVFWsSIiIRfQs7dzzzhWkjaT0UipgQ5P1opEVY"
+        alt="An image"
+      />
+    </div>
+    <button id="postBtn" type="button">REGISTRAR</button>

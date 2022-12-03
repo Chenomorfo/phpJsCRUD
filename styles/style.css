@@ -1,0 +1,233 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navBar {
+  height: 80px;
+  background-color: rgba(37, 109, 133, 0.4);
+}
+.navBar ul {
+  height: 100%;
+  background-color: unset;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.navBar ul a {
+  user-select: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: #dff6ff;
+}
+.navBar ul a li {
+  font-size: 3.3rem;
+  background-color: rgba(71, 181, 255, 0.4);
+  padding: 3px 15px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+.navBar ul a li:hover {
+  background-color: #47b5ff;
+}
+
+body {
+  background-color: #06283d;
+}
+body h1 {
+  margin: 5px auto;
+  text-align: center;
+  font-size: 3.5rem;
+  width: 70%;
+  color: #dff6ff;
+}
+
+.RegContainer {
+  background-color: #256d85;
+  width: 60%;
+  margin: 30px auto;
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  justify-content: center;
+  border-radius: 10px;
+}
+.RegContainer * {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.RegContainer form {
+  padding: 15px;
+  width: 50%;
+}
+.RegContainer form div {
+  color: #dff6ff;
+  padding: 5px;
+  font-size: 1.3rem;
+}
+.RegContainer form div input {
+  font-size: 1.3rem;
+  background-color: unset;
+  border: 2px solid #47b5ff;
+  color: #dff6ff;
+}
+.RegContainer form div select {
+  font-size: 1.3rem;
+  background-color: unset;
+  border: 2px solid #47b5ff;
+  color: #dff6ff;
+}
+.RegContainer form div select option {
+  background-color: #256d85;
+  color: #dff6ff;
+}
+.RegContainer form div button {
+  font-size: 1.1rem;
+  padding: 1px 4px;
+  background-color: #dff6ff;
+  border-radius: 5px;
+  transition: background-color 0.5s ease-out;
+}
+.RegContainer form div button:hover {
+  background-color: #47b5ff;
+}
+.RegContainer form textarea {
+  width: 100%;
+  background-color: unset;
+  border: 2px solid #47b5ff;
+  font-size: 1.4rem;
+}
+.RegContainer form fieldset {
+  border: 2px solid #47b5ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  color: white;
+}
+.RegContainer form fieldset div {
+  font-size: 1rem;
+}
+.RegContainer form fieldset div input[type=checkbox] {
+  appearance: none;
+  height: 1.1rem;
+  width: 1.1rem;
+}
+.RegContainer form fieldset div input[type=checkbox]:checked {
+  appearance: none;
+  height: 1.1rem;
+  width: 1.1rem;
+  background-color: #dff6ff;
+}
+.RegContainer img {
+  width: 50%;
+  border: 1px solid black;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.RegContainer + button {
+  display: flex;
+  padding: 10px 30px;
+  margin: auto;
+  font-size: 4rem;
+  background-color: unset;
+  color: white;
+  border: 5px solid #47b5ff;
+  transition: background-color 0.2s ease-in;
+  border-radius: 15px;
+}
+
+.RegContainer + button:hover {
+  background-color: #47b5ff;
+}
+
+.FindContainer {
+  overflow: hidden;
+  height: calc(100vh - 80px);
+}
+.FindContainer .CardList {
+  padding: 15px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+.FindContainer .CardList .Card {
+  filter: brightness(80%);
+  transform: scale(100%);
+  height: 420px;
+  width: 100%;
+  background-color: #256d85;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out, filter 1s ease-in-out;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 20% 60% 20%;
+  grid-template-areas: "Title Date" "Portrait Portrait" "Author Logo";
+}
+.FindContainer .CardList .Card * {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.3rem;
+}
+.FindContainer .CardList .Card .Portrait {
+  grid-area: Portrait;
+  object-fit: cover;
+}
+.FindContainer .CardList .Card .Title {
+  grid-area: Title;
+}
+.FindContainer .CardList .Card .Date {
+  grid-area: Date;
+}
+.FindContainer .CardList .Card .Author {
+  grid-area: Author;
+}
+.FindContainer .CardList .Card .Logo {
+  grid-area: Logo;
+  object-fit: cover;
+}
+.FindContainer .CardList .Card .Controls {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  gap: 5px;
+  transition: transform 0.25s ease-in-out;
+  transform: scale(0%);
+}
+.FindContainer .CardList .Card .Controls button {
+  border-radius: 20px;
+  border: none;
+  background-color: #dff6ff;
+  color: black;
+  font-size: 1.4rem;
+  height: 75px;
+  width: 40%;
+  transition: all 0.3s ease-in-out;
+}
+.FindContainer .CardList .Card .Controls button:hover {
+  color: white;
+  background-color: black;
+}
+.FindContainer .CardList .Card:hover {
+  transform: scale(105%);
+  filter: brightness(100%);
+}
+
+/*# sourceMappingURL=style.css.map */

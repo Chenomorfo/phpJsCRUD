@@ -1,0 +1,108 @@
+.FindContainer {
+  overflow: hidden;
+  height: calc(100vh - 80px);
+
+  .CardList {
+    padding: 15px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100%;
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+      
+      .Card {
+        filter: brightness(80%);
+        transform: scale(100%);
+        height: 420px;
+        width: 100%;
+
+        background-color: $color2;
+        border-radius: 20px;
+        overflow: hidden;
+        
+        transition: transform 0.5s ease-in-out, filter 1s ease-in-out;
+  
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 20% 60% 20%;
+        grid-template-areas:
+          "Title Date"
+          "Portrait Portrait"
+          "Author Logo";
+  
+          * {
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            
+            color: white;
+            font-size: 1.3rem;
+          }
+        
+          .Portrait {
+            grid-area: Portrait;
+            object-fit: cover;
+          }
+          .Title {
+            grid-area: Title;
+          }
+          .Date {
+            grid-area: Date;
+          }
+          .Author {
+            grid-area: Author;
+          }
+          .Logo {
+            grid-area: Logo;
+            object-fit: cover;
+          }
+
+        .Controls{
+          z-index: 1;
+          position: absolute;
+          left: 0; 
+          right: 0;
+          top: 0; 
+          bottom: 0;
+          display: flex;
+          gap: 5px;
+          transition: transform 0.25s ease-in-out;
+          transform: scale(0%);
+      
+          
+          button{
+            border-radius: 20px;
+            border: none;
+            background-color: $color4;
+            color: black;
+            font-size: 1.4rem;
+            height: 75px;
+            width: 40%;
+            transition: all 0.3s ease-in-out;
+          }
+          button:hover{
+            color: white;
+            background-color: black;
+          }
+        }
+        
+
+      }
+  
+      .Card:hover{
+          transform: scale(105%);
+          filter: brightness(100%);
+      }
+
+    }
+
+    
+  }
+
