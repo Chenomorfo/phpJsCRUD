@@ -30,4 +30,4 @@ Made in vanilla *Javascript*, *PHP 8.1* and *JQuery*
   * In Windows, the tables does not have much problem with queries if write it different, but in **Linux need to be exactly the same name**.
 
 Me after ends the project for now:
-<img src="https://i.pinimg.com/564x/51/d0/09/51d00954376dc949d22febaecab899bc.jpg" alt="drawing" width="100%"/>
+<img src="https://media.tenor.com/yF0jIoAtfZMAAAAM/pikachu.gif" alt="drawing" width="100%"/>
